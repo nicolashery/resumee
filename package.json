@@ -1,0 +1,11 @@
+{
+  "name": "resumee",
+  "version": "0.1.0",
+  "description": "Quick resume builder",
+  "homepage": "https://github.com/nicolahery/resumee",
+  "author": "Nicolas Hery <nicolahery@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "grunt-jade": "*"
+  }
+}

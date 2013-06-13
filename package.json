@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "description": "Quick resume builder",
   "homepage": "https://github.com/nicolahery/resumee",
-  "author": "Nicolas Hery <nicolahery@gmail.com>",
+  "author": "Nicolas Hery",
   "private": true,
-  "dependencies": {
-    "grunt-jade": "*"
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jade": "~0.7.0",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-connect": "~0.3.0"
   }
 }

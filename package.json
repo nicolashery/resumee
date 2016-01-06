@@ -1,15 +1,18 @@
 {
   "name": "resumee",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Quick resume builder",
   "homepage": "https://github.com/nicolahery/resumee",
   "author": "Nicolas Hery",
   "private": true,
-  "dependencies": {},
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-jade": "~0.7.0",
-    "grunt-contrib-watch": "~0.4.4",
-    "grunt-contrib-connect": "~0.3.0"
+  "dependencies": {
+    "http-server": "0.8.5",
+    "jade": "1.11.0",
+    "parallelshell": "2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "jade --pretty index.jade",
+    "dev": "parallelshell 'jade --pretty --watch index.jade' 'http-server -p 3000 .'"
   }
 }

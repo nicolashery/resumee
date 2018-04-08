@@ -15,3 +15,4 @@ Thumbs.db
 
 # Application specific files
 node_modules
+package-lock.json

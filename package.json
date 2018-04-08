@@ -1,18 +1,19 @@
 {
   "name": "resumee",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Quick resume builder",
   "homepage": "https://github.com/nicolahery/resumee",
   "author": "Nicolas Hery",
   "private": true,
   "dependencies": {
-    "http-server": "0.8.5",
-    "jade": "1.11.0",
-    "parallelshell": "2.0.0"
+    "concurrently": "3.5.1",
+    "http-server": "0.11.1",
+    "pug": "2.0.3",
+    "pug-cli": "1.0.0-alpha6"
   },
   "devDependencies": {},
   "scripts": {
-    "build": "jade --pretty index.jade",
-    "dev": "parallelshell 'jade --pretty --watch index.jade' 'http-server -p 3000 .'"
+    "build": "pug --pretty index.pug",
+    "dev": "concurrently 'pug --pretty --watch index.pug' 'http-server -p 3000 .'"
   }
 }
